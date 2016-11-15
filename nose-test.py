@@ -26,7 +26,7 @@ class GithubSearchTest(unittest.TestCase):
     def test_03(self):
         driver = self.driver
         driver.get(self.base_url)
-        assert "nothing" in driver.page_source
+        assert "global" in driver.page_source
 
     def tearDown(self):
         self.driver.close()
